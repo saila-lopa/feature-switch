@@ -1,6 +1,5 @@
 package com.moneylion.assigment.featureswitch.services;
 
-import com.moneylion.assigment.featureswitch.models.Feature;
 import com.moneylion.assigment.featureswitch.request.FeatureAccessCheckRequest;
 import com.moneylion.assigment.featureswitch.request.UpdateFeatureAccessRequest;
 import com.moneylion.assigment.featureswitch.responses.FeatureAccessCheckResponse;

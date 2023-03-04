@@ -1,6 +1,5 @@
 package com.moneylion.assigment.featureswitch.validation;
 
-import com.moneylion.assigment.featureswitch.request.FeatureAccessCheckRequest;
 import jakarta.validation.ConstraintViolation;
 
 import java.util.ArrayList;
