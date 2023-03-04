@@ -1,0 +1,23 @@
+<configuration>
+    <variable name="NEO_LOG_LEVEL" value="INFO" />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender" level="${NEO_LOG_LEVEL}">
+        <encoder>
+            <pattern>%d{YYYY-MM-dd HH:mm:ss.SSS} [%thread] %-5level  %class{36}.%M#%L  - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="Exposed" level="${NEO_LOG_LEVEL}" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <logger name="com.zaxxer.hikari" level="${NEO_LOG_LEVEL}"/>
+    <logger name="org.junit" level="${NEO_LOG_LEVEL}"/>
+    <logger name="com.moneylion" level="${NEO_LOG_LEVEL}" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <root level="${NEO_LOG_LEVEL}">
+        <appender-ref ref="STDOUT"/>
+    </root>x
+
+</configuration>
